@@ -2,6 +2,24 @@
 
 A lightweight Python CLI tool to validate Slack API credentials and run basic Slack searches.
 
+## What you should do (in your own terminal)
+
+Yes — you should run these commands on **your own computer terminal** (not in Slack):
+
+```bash
+cd ~/Downloads/slack-search-agent
+python3 -m pip install --user -r requirements.txt
+cp .env.example .env
+python3 test_setup.py
+python3 example.py
+```
+
+If the first `cd` fails, find the folder with:
+
+```bash
+find ~ -name "slack-search-agent" -type d 2>/dev/null
+```
+
 ## Quick start
 
 1. Create and activate a virtual environment (recommended):
